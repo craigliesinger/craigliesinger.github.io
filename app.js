@@ -140,17 +140,17 @@ myProjects.directive('pane', function() {
 		.when('/', {
                 templateUrl : 'partials/overview.html',
                 controller  : 'ProjectsCtrl'
-        })
+		})
 
             // route for the sgv page
-            .when('/sgv', {
-                templateUrl : 'pages/sgv.html',
+        .when('/sgv', {
+                templateUrl : 'partials/sgv.html',
                 controller  : 'ProjectsCtrl'
-            })
+        })
 
             // route for the MD page
-            .when('/mathdash', {
-                templateUrl : 'pages/mathdash.html',
+        .when('/mathdash', {
+                templateUrl : 'partials/mathdash.html',
                 controller  : 'ProjectsCtrl'
-            });
+        });
 });
