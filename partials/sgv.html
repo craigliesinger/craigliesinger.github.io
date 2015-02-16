@@ -1,8 +1,9 @@
 				<div ng-repeat="project in projects | filter: 'sgv'">
 					<h2>{{project.title}}</h2>
 					<p>{{project.detail}}</p>
-					<div class="col-md-3" ng-repeat="image in project.image">
-						<img src="{{image}}" class="ssImage"></img>
+					<div class="col-md-4" ng-repeat="image in project.image">
+						<h3>{{image.header}}</h3>
+						<img src="{{image.ss}}" class="ssImage"></img>
 					</div>
-					<hr/>
+					
 				</div>
