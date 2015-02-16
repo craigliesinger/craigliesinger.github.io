@@ -6,9 +6,16 @@
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
+/*! MY CLASSES */
 .ssImage {
 	max-width:100%;
 }
+.ssHeader {
+	line-height: 3;
+	text-align: center;
+	}
+
+/*! END MY CLASSES */
 
 html {
   font-family: sans-serif;
