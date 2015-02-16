@@ -1,5 +1,8 @@
 				<div ng-repeat="project in projects">
-					<h2><a href="#/partials/{{project.short}}">{{project.title}}</a>	<small>{{project.time}}	<span ng-if="project.time == '2015'" class="label label-primary">New</span></small></h2>
-					<p>{{project.overview}}</p>
+					<h2>{{project.title}}</h2>
+					<p>{{project.detail}}</p>
+					<div class="col-md-3 col-md-offset-1" ng-repeat="image in project.image>
+						<img src="{{image}}></img>
+					</div>
 					<hr/>
 				</div>
