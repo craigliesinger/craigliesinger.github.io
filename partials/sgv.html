@@ -1,4 +1,4 @@
-				<div ng-repeat="project in projects">
+				<div ng-repeat="(short, sgv) in projects">
 					<h2>{{project.title}}</h2>
 					<p>{{project.detail}}</p>
 					<div class="col-md-3 col-md-offset-1" ng-repeat="image in project.image">
