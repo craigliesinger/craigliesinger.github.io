@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="projects">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Craig Liesinger</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+	<!-- Optional theme 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	-->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+
+	
+</head>
+<body ng-controller="ProjectsCtrl">
+	<div class="col-md-8 col-md-offset-2">
+	
+	<h1>Craig Liesinger</h1>
+	<!--<span class="glyphicon glyphicon-dashboard"></span> -->
+		<tabs>
+			<pane title="Mobile Apps">
+			<div ng-view></div>
+			</pane>
+			
+			<pane title="Jobs">
+				<div ng-repeat="jobs in jobs">
+					<h2><a href="{{jobs.website}}">{{jobs.company}}</a>	<small>{{jobs.location}}</small></h2>
+					<div ng-repeat="role in jobs.roles">
+						<h4>{{role.title}}	<small>{{role.startdate}} to {{role.enddate}}</small></h4> 
+						<p>{{role.details}}</p>
+					</div>
+					<hr/>	
+				</div>
+			</pane>
+			
+			<pane title="Education">
+				<div ng-repeat="school in schools">
+					<h2><a href="{{school.website}}">{{school.university}}</a>	<small>{{school.location}}</small></h2>
+						<h5>{{school.degree}}	<small>{{school.startdate}} to {{school.enddate}}</small></h5> 
+				<hr/>	
+				</div>
+			</pane>
+		</tabs>
+	</div>
+	
+
+	
+</body>
+</html>
