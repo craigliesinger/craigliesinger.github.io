@@ -12,7 +12,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'link': "https://itunes.apple.com/app/german-strong-verbs/id598672329?mt=8&ign-mpt=uo%3D2"
 	 },
     {'title': 'Math Dash',
-	 'short': 'md',
+	 'short': 'mathdash',
 	 'time': '2015',
      'overview': "A game to awaken your brain by solving basic math problems as quickly as possible.", 
 	 'details': "blah blah blah stuff"
