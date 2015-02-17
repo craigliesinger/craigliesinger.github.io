@@ -23,32 +23,8 @@
 <body ng-controller="ProjectsCtrl">
 	<div class="col-md-8 col-md-offset-2">
 	
-	<h1>Craig Liesinger</h1>
-	<!--<span class="glyphicon glyphicon-dashboard"></span> -->
-		<tabs>
-			<pane title="Mobile Apps">
-			<div ng-view></div>
-			</pane>
-			
-			<pane title="Jobs">
-				<div ng-repeat="jobs in jobs">
-					<h2><a href="{{jobs.website}}">{{jobs.company}}</a>	<small>{{jobs.location}}</small></h2>
-					<div ng-repeat="role in jobs.roles">
-						<h4>{{role.title}}	<small>{{role.startdate}} to {{role.enddate}}</small></h4> 
-						<p>{{role.details}}</p>
-					</div>
-					<hr/>	
-				</div>
-			</pane>
-			
-			<pane title="Education">
-				<div ng-repeat="school in schools">
-					<h2><a href="{{school.website}}">{{school.university}}</a>	<small>{{school.location}}</small></h2>
-						<h5>{{school.degree}}	<small>{{school.startdate}} to {{school.enddate}}</small></h5> 
-				<hr/>	
-				</div>
-			</pane>
-		</tabs>
+	<h1><a href="#">Craig Liesinger</a></h1>
+		<div ng-view></div>
 	</div>
 	
 
