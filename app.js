@@ -3,7 +3,7 @@ var myProjects = angular.module('projects', ['ngRoute']);
 myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
   $scope.projects = [
     {'title': 'German Strong Verbs',
-	 'short': 'sgv',
+	 'short': 'gsv',
 	 'time': '2012',
      'overview': "This was first experiment in the world of iOS application creation. I started as a total novice, but came to learn XCode, objective-C, interface builder / story board, Gimp, and all the various tasks of actually releasing an app to the Apple App Store.",
 	 'detail': "When you start to learn a new language, like German, you start to get comfortable with the rules and conjugations… and then you hit ‘exceptions’.  One of the most frustrating parts of learning a new language is the exceptions!  They defy the previously learned rules at their will with seemingly no pattern! Ahh!  Strong German Verbs provides a friendly, straight forward reference for over 150 of the commonly used irregular (strong) verbs.",
