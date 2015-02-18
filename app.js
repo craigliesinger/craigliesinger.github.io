@@ -142,8 +142,8 @@ myProjects.directive('pane', function() {
 		})
 
             // route for the sgv page
-        .when('/sgv', {
-                templateUrl : 'partials/sgv.html',
+        .when('/gsv', {
+                templateUrl : 'partials/gsv.html',
                 controller  : 'ProjectsCtrl'
         })
 
