@@ -11,7 +11,7 @@
 				<div ng-repeat="jobs in jobs">
 					<h2><a href="{{jobs.website}}">{{jobs.company}}</a>	<small>{{jobs.location}}</small></h2>
 					<div ng-repeat="role in jobs.roles">
-						<h4>{{role.title}}	<small>{{role.startdate}} to {{role.enddate}}</small></h4> 
+						<h4><b>{{role.title}}</b>	<small>{{role.startdate}} to {{role.enddate}}</small></h4> 
 						<p>{{role.details}}</p>
 					</div>
 					<hr/>	
