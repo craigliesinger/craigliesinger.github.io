@@ -70,16 +70,14 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'location': 'Copenhagen, Denmark',
 	 'startdate': '13 June 2008',
 	 'enddate': '3 July 2008',
-     'degree': 'European Business Strategy',
-	 'gpa': ''
+     'degree': 'European Business Strategy'
 	 },
 	 {'university': 'Wirtschaftsuniversität Wien - International Summer University',
 	 'website': 'http://www.wu.ac.at/io/incoming/isuwuin/en/',
 	 'location': 'Vienna, Austria',
 	 'startdate': '7 July 2008',
 	 'enddate': '25 July 2008',
-     'degree': 'Intercultural Management, Marketing & Corporate Governance',
-	 'gpa': ''
+     'degree': 'Intercultural Management, Marketing & Corporate Governance'
 	 }
   ];
   
