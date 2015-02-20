@@ -7,7 +7,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'time': '2012',
      'overview': "This was first experiment in the world of iOS application creation. I started as a total novice, but came to learn XCode, objective-C, interface builder / story board, Gimp, and all the various tasks of actually releasing an app to the Apple App Store.",
 	 'detail': "A straight forward reference for over 150 of the most commonly used irregular (strong) verbs of the German language",
-	 'image': [{'header': "Over 150 irregular verbs!",'ss': "img/gsv/iphone_ss1.png"},{'header': "All cases and tenses!", 'ss': "img/gsv/iphone_ss2.png"}, {'header': "Search feature for fast verb finding!", 'ss': "img/gsv/iphone_ss3.png"}],
+	 'image': [{'header': "Over 150 irregular verbs",'ss': "img/gsv/iphone_ss1.png"},{'header': "All cases and tenses", 'ss': "img/gsv/iphone_ss2.png"}, {'header': "Search feature for fast verb finding", 'ss': "img/gsv/iphone_ss3.png"}],
 	 'link': "https://itunes.apple.com/app/german-strong-verbs/id598672329?mt=8&ign-mpt=uo%3D2"
 	 },
     {'title': 'Math Dash',
