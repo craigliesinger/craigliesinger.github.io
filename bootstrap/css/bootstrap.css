@@ -16,13 +16,13 @@
 #main {
   min-height: 100%;
   overflow:auto;
-  padding-bottom:50px; /* this needs to be bigger than footer height*/
+  padding-bottom:35px; /* this needs to be bigger than footer height*/
 }
 
 .footer {
   position: relative;
-  margin-top: -50px; /* negative value of footer height */
-  height: 50px;
+  margin-top: -35px; /* negative value of footer height */
+  height: 35px;
   clear:both;
   padding-top:10px;
   text-align: center;
@@ -30,8 +30,8 @@
 } 
 
 .footerIcon {
-  padding-left: 20px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /*! END MY CLASSES */
