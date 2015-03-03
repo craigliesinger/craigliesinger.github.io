@@ -10,7 +10,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'image': [{'header': "Over 150 irregular verbs",'ss': "img/gsv/iphone_ss1.png"},{'header': "All cases and tenses", 'ss': "img/gsv/iphone_ss2.png"}, {'header': "Search feature for fast verb finding", 'ss': "img/gsv/iphone_ss3.png"}],
 	 'link': "https://itunes.apple.com/app/german-strong-verbs/id598672329?mt=8&ign-mpt=uo%3D2"
 	 },
-    {'title': 'Math Dash',
+    {'title': 'New App',
 	 'short': 'mathdash',
 	 'time': '2015',
      'overview': "A game to awaken your brain by solving basic math problems as quickly as possible.", 
