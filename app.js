@@ -11,7 +11,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'link': "https://itunes.apple.com/app/german-strong-verbs/id598672329?mt=8&ign-mpt=uo%3D2"
 	 },
     {'title': 'New App',
-	 'short': 'mathdash',
+	 'short': 'mathespresso',
 	 'time': '2015',
      'overview': "A game to awaken your brain by solving basic math problems as quickly as possible.", 
 	 'details': "blah blah blah stuff"
@@ -146,8 +146,8 @@ myProjects.directive('pane', function() {
         })
 
             // route for the MD page
-        .when('/mathdash', {
-                templateUrl : 'partials/mathdash.html',
+        .when('/mathespresso', {
+                templateUrl : 'partials/mathespresso.html',
                 controller  : 'ProjectsCtrl'
         });
 });
