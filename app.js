@@ -10,11 +10,12 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'image': [{'header': "Over 150 irregular verbs",'ss': "img/gsv/iphone_ss1.png"},{'header': "All cases and tenses", 'ss': "img/gsv/iphone_ss2.png"}, {'header': "Search feature for fast verb finding", 'ss': "img/gsv/iphone_ss3.png"}],
 	 'link': "https://itunes.apple.com/app/german-strong-verbs/id598672329?mt=8&ign-mpt=uo%3D2"
 	 },
-    {'title': 'New App',
+    {'title': 'Math Espresso',
 	 'short': 'mathespresso',
 	 'time': '2015',
      'overview': "A game to awaken your brain by solving basic math problems as quickly as possible.", 
-	 'details': "blah blah blah stuff"
+	 'details': "Wake up your brain with a shot of Math Espresso!  See how quickly you can correctly answer the 3 rounds of addition, subtraction, multiplication and division questions.  See how you stack up against others in the leader board and share your best times on Facebook and Twitter.  You can also hone your skills at your own pace, desired question type and difficulty in the Practice mode.",
+	 'image': [{'ss': "img/md/website1.png"}, {'ss': "img/md/website2.png"}, {'ss': "img/md/website3.png"}]
 	 }
   ];
   
