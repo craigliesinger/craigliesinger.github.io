@@ -14,7 +14,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'short': 'mathespresso',
 	 'time': '2015',
      'overview': "A game to awaken your brain by solving basic math problems as quickly as possible.", 
-	 'detail': "Wake up your brain with a shot of Math Espresso!"<br>"See how quickly you can correctly answer the 3 rounds of addition, subtraction, multiplication and division questions.  See how you stack up against others in the leader board and share your best times on Facebook and Twitter.  You can also hone your skills at your own pace, desired question type and difficulty in the Practice mode.",
+	 'detail': "Wake up your brain with a shot of Math Espresso! <br/>See how quickly you can correctly answer the 3 rounds of addition, subtraction, multiplication and division questions.  See how you stack up against others in the leader board and share your best times on Facebook and Twitter.  You can also hone your skills at your own pace, desired question type and difficulty in the Practice mode.",
 	 'image': [{'ss': "img/md/website1.png"}, {'ss': "img/md/website2.png"}, {'ss': "img/md/website3.png"}]
 	 }
   ];
