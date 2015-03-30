@@ -42,6 +42,9 @@
 #meimage {
   max-width: 150px;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 /*! END MY CLASSES */
