@@ -39,9 +39,8 @@
   color: #D9D9D9;
 }
 
-.meimage {
-  max-width: 150px;
-  min-width: 75px;
+#meimage {
+  max-width: 250px;
   height: auto;
 }
 
