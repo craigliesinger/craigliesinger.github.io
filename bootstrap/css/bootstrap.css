@@ -44,12 +44,17 @@
   height: auto;
   display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
 @media (max-width: 992px) {
  .centerTextIfSmall{
    text-align: center;
+ }
+ .centerImageIfSmall {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
  }
 }
 
