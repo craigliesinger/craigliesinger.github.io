@@ -34,6 +34,15 @@
   padding-right: 50px;
 }
 
+.mathespresso {
+  background-color: #591E14;
+}
+.meimage {
+  max-width: 150px;
+  min-width: 75px;
+  height: auto;
+}
+
 /*! END MY CLASSES */
 
 html {
