@@ -1,9 +1,6 @@
 		<div ng-repeat="project in projects | filter: 'mathespresso'">
 			<div class="jumbotron" id="mathespresso">
-				<div class="row">
-					<img class="meimage span2" src="{{project.icon}}"></img>
-					<h1 class="span7">{{project.title}}</h1>
-				</div>
+				<h1><img class="meimage span2" src="{{project.icon}}"></img>{{project.title}}</h1>
 				<p>{{project.detail}}</p>
 				<a href="{{project.link}}"><img src="img/App_Store_Badge.svg"></img></a>
 			</div>
