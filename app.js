@@ -16,7 +16,8 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
      'overview': "A game to awaken your brain by solving basic math problems as quickly as possible.", 
 	 'detail': "Wake up your brain with a shot of Math Espresso!  See how quickly you can correctly answer addition, subtraction, multiplication and division questions.",
 	 'image': [{'ss': "img/md/website1.png"}, {'ss': "img/md/website2.png"}, {'ss': "img/md/website3.png"}],
-	 'icon': "img/md/iTunesArtwork@2x.png"
+	 'icon': "img/md/iTunesArtwork@2x.png",
+	 'link': "https://itunes.apple.com/vn/app/math-espresso/id972446911?mt=8"
 	 }
   ];
   
