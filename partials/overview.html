@@ -26,5 +26,14 @@
 				<hr/>	
 				</div>
 			</pane>
+			
+			<pane title="Experiments Lab">
+				<div ng-repeat="experiment in experiments">
+					<h2><a href="#{{experiment.short}}">{{experiment.name}}</a></h2>
+					<p>{{experiment.details}}</p>
+				</div>
+				<hr/>
+			</pane>
+			
 		</tabs>
 		</div>
