@@ -1,4 +1,4 @@
-var myProjects = angular.module('projects', ['ngRoute']);
+var myProjects = angular.module('projects', ['ngRoute', 'ngAnimate']);
 
 myProjects.controller('ProjectsCtrl', ['$scope', '$animate', function ($scope, $animate) {
   $scope.projects = [
@@ -87,7 +87,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', '$animate', function ($scope, $
   $scope.experiments = [
 	{'name': 'Show Links button animations for web',
 	'short': 'showlinks',
-	'description': 'Using AngularJS to trigger and CSS to animate a button expanding to show more links'
+	'details': 'Using AngularJS to trigger and CSS to animate a button expanding to show more links'
 	}
   ];
   
