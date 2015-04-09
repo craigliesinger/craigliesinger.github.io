@@ -1,6 +1,6 @@
-var myProjects = angular.module('projects', ['ngRoute', 'ngAnimate']);
+var myProjects = angular.module('projects', ['ngRoute']);
 
-myProjects.controller('ProjectsCtrl', ['$scope', '$animate', function ($scope, $animate) {
+myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
   $scope.projects = [
     {'title': 'German Strong Verbs',
 	 'short': 'gsv',
