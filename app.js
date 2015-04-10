@@ -1,4 +1,4 @@
-var myProjects = angular.module('projects', ['ngRoute']);
+var myProjects = angular.module('projects', ['ngRoute', 'ngAnimate']);
 
 myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
   $scope.projects = [
