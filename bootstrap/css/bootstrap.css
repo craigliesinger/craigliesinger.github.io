@@ -92,6 +92,9 @@
 #linksButton label span {
     text-align:center;
     display:block;
+    line-height: 30px;
+    font-size: 50px;
+    font-weight: 100;
 }
 
 #linksButton label input {
@@ -102,6 +105,9 @@
 #linksButton input:checked + span {
     background-color:#525252;
     color:#fff;
+    line-height: 30px;
+    font-size: 50px;
+    font-weight: 100;
 }
 
 /*! END MY CLASSES */
