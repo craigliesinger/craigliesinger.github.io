@@ -87,18 +87,18 @@
 
 #linksButton label {
     float:left;
-    width:4.0em;
+    width:100%;
 }
 
 #linksButton label span {
     text-align:center;
-    padding:3px 0px;
+    font-size: 18px;
     display:block;
 }
 
 #linksButton label input {
     position:absolute;
-    top:-20px;
+    top:-2000px;
 }
 
 #linksButton input:checked + span {
