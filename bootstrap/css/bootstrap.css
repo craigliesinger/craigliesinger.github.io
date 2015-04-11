@@ -106,10 +106,6 @@
 }
 
 #linksButton input:checked + span {
-    background-color:#525252;
-    line-height: 30px;
-    font-size: 50px;
-    font-weight: 100;
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
 }
