@@ -96,8 +96,6 @@
     font-size: 50px;
     font-weight: 100;
     color:#fff;
-    -webkit-transition:all linear 0.5s;
-    transition:all linear 0.5s;
 }
 
 #linksButton label input {
@@ -107,11 +105,16 @@
 
 #linksButton input:checked + span {
     background-color:#525252;
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
     line-height: 30px;
     font-size: 50px;
     font-weight: 100;
+}
+
+#linksButton input:checked {
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    -webkit-transition:all linear 0.5s;
+    transition:all linear 0.5s;
 }
 
 /*! END MY CLASSES */
