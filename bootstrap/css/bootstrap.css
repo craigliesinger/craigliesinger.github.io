@@ -59,10 +59,6 @@
 }
 
 /*! PLAYGROUND ANIMATIONS */
-.showLinksContainer {
-	z-index: 20;
-}
-
 .sample-show-hide {
   padding:10px;
   border:1px solid #525252;
@@ -70,7 +66,6 @@
   margin-left: -15px;
   margin-top: 15px;
   position: absolute;
-  z-index: -10;
 }
 
 .sample-show-hide {
@@ -91,6 +86,8 @@
     overflow:hidden;
     float:left;
 	box-shadow: 2px 2px 4px #888888;
+	position: relative;
+	z-index: 10;
 }
 
 #linksButton label {
