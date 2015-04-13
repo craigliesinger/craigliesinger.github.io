@@ -85,7 +85,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
   ];
   
   $scope.experiments = [
-	{'name': 'Show Links button animations for web',
+	{'name': 'Show Links button animation',
 	'short': 'showlinks',
 	'details': 'Using AngularJS to trigger and CSS to animate a button expanding to show more links'
 	}
