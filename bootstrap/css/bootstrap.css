@@ -80,7 +80,7 @@
     background-color:#525252;
     border-radius:15px;
     border:1px solid #323232;
-    overflow:auto;
+    overflow:hidden;
     float:left;
 }
 
