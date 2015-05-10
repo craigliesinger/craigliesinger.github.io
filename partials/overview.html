@@ -1,7 +1,7 @@
 		<tabs>
 			<pane title="Mobile Apps">
 				<div ng-repeat="project in projects">
-					<h2><a href="#{{project.short}}" title="{{project}}">{{project.title}}</a>	<small>{{project.time}}	<span ng-if="project.time == '2015'" class="label label-primary">New</span></small></h2>
+					<h2><a href="#{{project.short}}" title="{{project.title}}">{{project.title}}</a>	<small>{{project.time}}	<span ng-if="project.time == '2015'" class="label label-primary">New</span></small></h2>
 					<p>{{project.overview}}</p>
 					<hr/>
 				</div>			
@@ -9,7 +9,7 @@
 			
 			<pane title="Work Experience">
 				<div ng-repeat="jobs in jobs">
-					<h2><a href="{{jobs.website}}" title="{{jobs}}">{{jobs.company}}</a>	<small>{{jobs.location}}</small></h2>
+					<h2><a href="{{jobs.website}}" title="{{jobs.company}}">{{jobs.company}}</a>	<small>{{jobs.location}}</small></h2>
 					<div ng-repeat="role in jobs.roles">
 						<h4><b>{{role.title}}</b>	<small>{{role.startdate}} to {{role.enddate}}</small></h4> 
 						<p>{{role.details}}</p>
@@ -20,7 +20,7 @@
 			
 			<pane title="Education">
 				<div ng-repeat="school in schools">
-					<h2><a href="{{school.website}}" title="school">{{school.university}}</a>	<small>{{school.location}}</small></h2>
+					<h2><a href="{{school.website}}" title="{{school.university}}">{{school.university}}</a>	<small>{{school.location}}</small></h2>
 						<h5>{{school.degree}}	<small>{{school.startdate}} to {{school.enddate}}</small></h5> 
 						<p ng-show="{{school.gpa}}">Final gpa: {{school.gpa}} on 4.0 scale</p>
 				<hr/>	
@@ -29,7 +29,7 @@
 			
 			<pane title="Experiments Lab">
 				<div ng-repeat="experiment in experiments">
-					<h2><a href="#{{experiment.short}}" title="experiment">{{experiment.name}}</a></h2>
+					<h2><a href="#{{experiment.short}}" title="{{experiment.name}}">{{experiment.name}}</a></h2>
 					<p>{{experiment.details}}</p>
 				</div>
 				<hr/>
