@@ -84,13 +84,6 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 }
   ];
   
-  $scope.experiments = [
-	{'name': 'Show Links button animation',
-	'short': 'showlinks',
-	'details': 'Using AngularJS to trigger and CSS to animate a button expanding to show more links'
-	}
-  ];
-  
 }]);
 
 myProjects.directive('tabs',function() {
@@ -158,12 +151,6 @@ myProjects.directive('pane', function() {
             // route for the MD page
         .when('/mathespresso', {
                 templateUrl : 'partials/mathespresso.html',
-                controller  : 'ProjectsCtrl'
-        })
-		
-		    // route for the showlinks page
-        .when('/showlinks', {
-                templateUrl : 'partials/showlinks.html',
                 controller  : 'ProjectsCtrl'
         });
 });
