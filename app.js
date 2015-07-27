@@ -22,10 +22,15 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
   ];
   
   $scope.jobs = [
+	{'company': 'Ecolab CEE',
+	 'website': 'http://www.ecolab.com/',
+	 'location': 'Veinna, Austria',
+	 'roles': [{'title': 'Project Manager CEE', 'startdate': 'October 2015', 'enddate': 'Current', 'details': 'Cross-functional and cross-regional Project Management for business projects.'}]
+	 },
 	{'company': 'bwin.party',
 	 'website': 'http://www.bwinparty.com/',
 	 'location': 'Veinna, Austria',
-	 'roles': [{'title': 'Business Analyst', 'startdate': 'September 2013', 'enddate': 'current', 'details': 'Creating technical requirements based on business / customer desires.  Serve as connection between business and software development.  Coordinate and prioritize development backlog.'}]
+	 'roles': [{'title': 'Business Analyst', 'startdate': 'September 2013', 'enddate': 'September 2015', 'details': 'Creating technical requirements based on business / customer desires.  Serve as connection between business and software development.  Coordinate and prioritize development backlog.'}]
 	 },
 	{'company': 'Cummins Inc.',
 	 'website': 'http://www.cummins.com/',
