@@ -18,6 +18,15 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'image': [{'ss': "img/md/website1_updated.jpg"}, {'ss': "img/md/website2_updated.jpg"}, {'ss': "img/md/website3_updated.jpg"}],
 	 'icon': "img/md/iTunesArtwork@2x.png",
 	 'link': "https://itunes.apple.com/vn/app/math-espresso/id972446911?mt=8"
+	 },
+    {'title': 'Baby Badge',
+	 'short': 'babybadge',
+	 'time': '2016',
+     'overview': "Age badges to mark every age milestone of your little one!", 
+	 'detail': "Babies grow up fast!  Capture every step with a Baby Badge.  Don't spend $10+ for 12 paper baby stickers when you can create hundreds of combinations for any day, week, month or year milestone for free with Baby Badge.",
+	 'image': [{'ss': "img/bb/website1.jpg"}, {'ss': "img/bb/website2.jpg"}, {'ss': "img/bb/website3.jpg"}],
+	 'icon': "img/bb/appIcon3x160.png",
+	 'link': "https://itunes.apple.com/vn/app/math-espresso/id972446911?mt=8"
 	 }
   ];
   
@@ -153,6 +162,11 @@ myProjects.directive('pane', function() {
                 controller  : 'ProjectsCtrl'
         })
 
+	   // route for the bb page
+        .when('/babybadge', {
+                templateUrl : 'partials/babybadge.html',
+                controller  : 'ProjectsCtrl'
+        })
             // route for the MD page
         .when('/mathespresso', {
                 templateUrl : 'partials/mathespresso.html',
