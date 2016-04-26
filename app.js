@@ -26,7 +26,7 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'detail': "Babies grow up fast!  Capture every step with a Baby Badge.  Don't spend $10+ for 12 paper baby stickers when you can create hundreds of combinations for any day, week, month or year milestone for free with Baby Badge.",
 	 'image': [{'ss': "img/bb/website1.jpg"}, {'ss': "img/bb/website2.jpg"}, {'ss': "img/bb/website3.jpg"}, {'ss': "img/bb/website4.jpg"}],
 	 'icon': "img/bb/appIcon2_3x180.png",
-	 'link': "https://itunes.apple.com/vn/app/math-espresso/id972446911?mt=8"
+	 'link': "https://itunes.apple.com/us/app/baby-badge/id1097938477?mt=8"
 	 }
   ];
   
