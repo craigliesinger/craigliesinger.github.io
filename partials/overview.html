@@ -1,7 +1,7 @@
 		<tabs>
 			<pane title="Mobile Apps">
 				<div ng-repeat="project in projects">
-					<h2><a href="#{{project.short}}" title="{{project.title}}">{{project.title}}</a>	<small>{{project.time}}	<span ng-if="project.time == '2016'" class="label label-primary">New!</span></small></h2>
+					<h2><a href="#{{project.short}}" title="{{project.title}}">{{project.title}}</a>	<small>{{project.time}}	<span ng-if="project.time == '2017'" class="label label-primary">New!</span></small></h2>
 					<p>{{project.overview}}</p>
 					<hr/>
 				</div>			
@@ -25,6 +25,14 @@
 						<p ng-show="{{school.gpa}}">Final gpa: {{school.gpa}} on 4.0 scale</p>
 				<hr/>	
 				</div>
+			</pane>
+			
+			<pane title="DIY Hacks">
+				<div ng-repeat="hack in hacks">
+					<h2><a href="#{{hack.short}}" title="{{hack.title}}">{{hack.title}}</a>	</h2>
+					<p>{{hack.overview}}</p>
+					<hr/>
+				</div>			
 			</pane>
 			
 		</tabs>
