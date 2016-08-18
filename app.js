@@ -98,6 +98,16 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 }
   ];
   
+  $scope.hacks = [
+    {'title': 'BLE controlled LED Mixing Lamp',
+	 'short': 'BLED',
+	 'time': 'Aug 18th, 2016',
+     'overview': "Arduino + Red Bear BLE 2.1 + Swift = Cool",
+	 'detail': "I love the thought of manipulating the outside world with code.  This project uses Arduino, Red Bear BLE Shield and iPhone (Swift) to control the color and brightness of a light.",
+	 'image': [{'header': "Over 150 irregular verbs",'ss': "img/gsv/iphone_ss1.png"},{'header': "All cases and tenses", 'ss': "img/gsv/iphone_ss2.png"}, {'header': "Search feature for fast verb finding", 'ss': "img/gsv/iphone_ss3.png"}]
+	 }
+  ];  
+  
 }]);
 
 myProjects.directive('tabs',function() {
@@ -156,6 +166,12 @@ myProjects.directive('pane', function() {
                 controller  : 'ProjectsCtrl'
 		})
 
+	    // route for the sgv page
+        .when('/BLED', {
+                templateUrl : 'partials/bled.html',
+                controller  : 'ProjectsCtrl'
+        })
+	
             // route for the sgv page
         .when('/gsv', {
                 templateUrl : 'partials/gsv.html',
