@@ -1,9 +1,10 @@
+<div ng-repeat="hack in hacks | filter: 'BLED'">
 	<div class="jumbotron jumbotronHacks" style="background-image: {{hack.image}};">
 		<div class="container">
 			<div class="col-md-2">
 			
 			</div>
-			<div class="col-md-10">
+			<div class="col-md-7">
 				<h1 class="centerTextIfSmall">Color Mixing Lamp Controlled by iPhone</h1>
 			</div>
 		</div>
@@ -11,7 +12,7 @@
 		<br/>
 		<p class="centerTextIfSmall">{{project.detail}}</p>
 	</div>
-		<div class="col-sm-6 col-md-10">
+		<div class="col-sm-6 col-md-6">
 			<h3>Ingridients</h3>
 			<ul class="list-group">
 				<li class="list-group-item">Arduino (Genuino) Uno, Microcontroller</li>
