@@ -12,7 +12,13 @@
 }
 .ssHeader {
 	text-align: center;
-	}
+}
+
+.jumbotronHacks {
+	background-image: url("../img/jumbotron_bg.jpg");
+	background-size: cover;
+}
+
 #main {
   min-height: 100%;
   overflow:auto;
