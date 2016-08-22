@@ -14,8 +14,8 @@
 	text-align: center;
 }
 
-.jumbotronHacks {
-	background-image: url("../img/jumbotron_bg.jpg");
+.jumbotronBLED {
+	background-image: url("img/hack/DIY_bled.jpeg");
 	background-size: cover;
 }
 
