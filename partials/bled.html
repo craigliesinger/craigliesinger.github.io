@@ -106,10 +106,10 @@ void loop() {
 	<div class="col-md-10">
 		<h3>Program The App</h3>
 		<p>Time to fire up Xcode and throw together a quick app to control our light.  The easiest way is to simply download the Read Bear app on the iTunes store and presto it works.  However, I don't learn anything this way so I want to build my own (plus I only need a front end that controls 3 pins, not every pin).  This task isn't too daunting thanks to the lovely open source <a href=” https://github.com/RedBearLab/iOS”> framework</a> provided by Read Bear.  Thus the task at hand is making a simple view to connect to the device and a view to set the values I want and use the provided framework to send them to the Bluetooth shield.  I decided to put the main controlling screen first and have a ‘connect’ button that will take us to a table view that will list all BLE devices advertising themselves for connection.</p>
-		<img src="../img/hack/bled_storyboard.png" alt="Xcode Storyboard" style="width:80%;height:auto;"></img>
+		<img src="../img/hack/bled_storyboard.png" alt="Xcode Storyboard" style="width:100%;height:auto;"></img>
 		<br/>
 		<p>Our viewcontroller swift file for the main view...</p>
-		<pre class="prettyprint">
+		<pre class="prettyprint lang-swift">
 import UIKit
 // Create global instance of BLE framework
 let myBLE = BLE()
@@ -198,7 +198,7 @@ class ViewController: UIViewController {
 		<p><i>*Don't forget to make the right connections between elements in the storyboard to the code.</i></p>
 		<br/>
 		<p>Then the simple tableViewController to show all devices advertising bluetooth services and giving us a mechanism to connect to a device.</p>
-		<pre class="prettyprint">
+		<pre class="prettyprint lang-swift">
 class scanTableViewController: UITableViewController {
    //Show a spinner if still scanning 
     @IBOutlet weak var mySpinner: UIActivityIndicatorView!
@@ -265,4 +265,8 @@ class scanTableViewController: UITableViewController {
 	<div class="col-md-10">
 		<h3>Result</h3>
 		<p>To soften the light I did some advanced hardward packaging (I put a tupperware container over top of it).  The opaque casing helps soften and distribute the light.  The light off to the side is the 'on' light for the BLE shield.  Sorry for the poor videography, I'm not too good at recording with one hand and using an App with the other :).</p>
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/P3PNRWPDajM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<img src="../img/hack/bled_final" alt="The result" style="width:50%;height:auto;"></img>
 	</div>
