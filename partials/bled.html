@@ -36,7 +36,75 @@
 	</div>
 	<div class="col-md-10">
 		<h3>Program The MicroController</h3>
-		<p>The circuit is set and now we need to teach the controller how / when it should power our various color pins...</p>
+		<p>The circuit is set and now we need to teach the controller how / when it should power our various color pins. First, we include the necessary libraries for the BLE shield.  Then we define which pin is connected to which color of our RGB LED.</p>
+		<br/>
+		<pre class="prettyprint">
+//Import needed libraries
+#include <SPI.h>
+#include <EEPROM.h>
+#include <boards.h>
+#include <RBL_nRF8001.h>
+	
+//Define global constant of which pin is which color to make code more readable
+const int greenLEDPin = 5;
+const int redLEDPin = 6;
+const int blueLEDPin = 3;
+		</pre>
+		<br/>
+		<p>Next step is to do the setup, telling the controller of our output pins, giving them initial values and firing up the bluetooth.</p>
+		<br/>
+		<pre class="prettyprint">
+void setup() {
+  // Make a serial connection for debugging when running via computer USB port.
+  Serial.begin(9600);
+
+  //Declare our LED pins as outputs
+  pinMode(greenLEDPin, OUTPUT);
+  pinMode(redLEDPin, OUTPUT);
+  pinMode(blueLEDPin, OUTPUT);
+
+  //Set the starting light color to even split RGB, mid level brightness (255 max)
+  analogWrite(redLEDPin, 127);
+  analogWrite(greenLEDPin, 127);
+  analogWrite(blueLEDPin, 127);
+  
+  // Set your BLE Shield name here, max. length 10
+  ble_set_name("LEDLamp");
+
+  // Init. and start BLE library.
+  ble_begin();
+}
+		</pre>
+		<br/>
+		<p>Now that we have the set up it is time to define the Loop, what the controller will be running on repeat as long as it is powered.  We set up some debugging to make sure our Bluetooth is connected, and if so we read in the passed values and if the value matches one of our LED pins we will assign the next given value as that pins value.</p>
+	<br/>
+	<pre class="prettyprint">
+void loop() {
+  // put your main code here, to run repeatedly:
+   if(ble_connected()){
+    Serial.print(" BLE connected ");
+  } else {
+    Serial.print(" [ERROR] BLE NOT connected ");
+  }
+   ble_do_events();
+
+//While the bluetooth is connected, read in data of location / value pairing 
+   while(ble_available()){   
+      byte led;
+      byte val;   
+
+      if(led = ble_read()){
+      //read the first number for the led to address, and the second for the value...
+        val = ble_read();
+        analogWrite(led, val);
+        Serial.print(led);
+        Serial.print(":");
+        Serial.print(val);
+        Serial.print("\n");
+    }
+  }
+}
+	</pre>
 	</div>
 	<div class="col-md-10">
 		<h3>Program The App</h3>
