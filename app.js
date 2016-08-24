@@ -136,6 +136,7 @@ myProjects.directive('tabs',function() {
               '<a href="" ng-click="select(pane)">{{pane.title}}</a>' +
             '</li>' +
           '</ul>' +
+          '<hr style="color: #63a2d3;"></hr>'
           '<div class="tab-content" ng-transclude></div>' +
         '</div>',
       replace: true
