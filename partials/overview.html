@@ -7,6 +7,14 @@
 				</div>			
 			</pane>
 			
+			<pane title="DIY Hacks">
+				<div ng-repeat="hack in hacks">
+					<h2><a href="#{{hack.short}}" title="{{hack.title}}">{{hack.title}}</a>	</h2>
+					<p>{{hack.overview}}</p>
+					<hr/>
+				</div>			
+			</pane>
+			
 			<pane title="Work Experience">
 				<div ng-repeat="jobs in jobs">
 					<h2><a href="{{jobs.website}}" title="{{jobs.company}}">{{jobs.company}}</a>	<small>{{jobs.location}}</small></h2>
@@ -26,14 +34,7 @@
 				<hr/>	
 				</div>
 			</pane>
-			
-			<pane title="DIY Hacks">
-				<div ng-repeat="hack in hacks">
-					<h2><a href="#{{hack.short}}" title="{{hack.title}}">{{hack.title}}</a>	</h2>
-					<p>{{hack.overview}}</p>
-					<hr/>
-				</div>			
-			</pane>
-			
+		
 		</tabs>
+		<hr style="color: #63a2d3;"></hr>
 		</div>
