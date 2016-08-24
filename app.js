@@ -131,7 +131,7 @@ myProjects.directive('tabs',function() {
       },
       template:
         '<div class="tabbable">' +
-          '<ul class="nav nav-tabs">' +
+          '<ul class="nav nav-pills nav-justified">' +
             '<li ng-repeat="pane in panes" ng-class="{active:pane.selected}">'+
               '<a href="" ng-click="select(pane)">{{pane.title}}</a>' +
             '</li>' +
