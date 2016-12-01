@@ -172,9 +172,14 @@ myProjects.directive('pane', function() {
                 controller  : 'ProjectsCtrl'
 		})
 
-	    // route for the sgv page
+	    // route for the ble light page
         .when('/BLED', {
                 templateUrl : 'partials/bled.html',
+                controller  : 'ProjectsCtrl'
+        })
+        // route for the sgv page
+        .when('/bleTemp', {
+                templateUrl : 'partials/bleTemp.html',
                 controller  : 'ProjectsCtrl'
         })
 	
