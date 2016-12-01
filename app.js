@@ -104,7 +104,13 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
 	 'time': 'Aug 18th, 2016',
      'overview': "Arduino + Red Bear BLE 2.1 + Swift = Cool",
 	 'image': "img/hack/DIY_bled.jpeg"
-	 }
+	 },
+    {'title': 'Remote Thermo Couple Sending Temp to iPhone',
+     'short': 'bleTemp',
+     'time': 'October 15th, 2016',
+     'overview': "Time to receive the data",
+     'image': "img/hack/DIY_bled.jpeg"
+    }
   ];  
   
 }]);
