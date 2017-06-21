@@ -105,6 +105,12 @@ myProjects.controller('ProjectsCtrl', ['$scope', function ($scope) {
      'overview': "Arduino + Red Bear BLE 2.1 + Swift = Cool",
 	 'image': "img/hack/DIY_bled.jpeg"
 	 },
+                  {'title': 'SP FE Test',
+                  'short': 'SP',
+                  'time': 'in progress',
+                  'overview': "side project",
+                  'image': "img/hack/DIY_bled.jpeg"
+                  },
     {'title': 'Remote Thermo Couple Sending Temp to iPhone',
      'short': 'bleTemp',
      'time': 'October 15th, 2016',
@@ -177,6 +183,11 @@ myProjects.directive('pane', function() {
                 templateUrl : 'partials/bled.html',
                 controller  : 'ProjectsCtrl'
         })
+                   // route for the ble light page
+                   .when('/SP', {
+                         templateUrl : 'partials/sptest/spindex.html',
+                         controller  : 'ProjectsCtrl'
+                         })
         // route for the sgv page
         .when('/bleTemp', {
                 templateUrl : 'partials/bleTemp.html',
