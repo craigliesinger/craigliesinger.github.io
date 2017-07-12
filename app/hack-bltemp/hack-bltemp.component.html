@@ -1,0 +1,73 @@
+<div class="wrapper">
+<div class="header header-filter" style="background-image: url('/assets/img/hack/DIY_bled.jpeg');">
+    <div class="container">
+			<br/>
+			<br/>
+      <br/>
+			<div class="col-md-5">	
+			</div>
+			<div class="col-md-7" style="background: rgba(50, 50, 50, 0.4);">
+				<h1 class="centerTextIfSmall" style="color: white;">Sending Data to iPhone</h1>
+			</div>
+		</div>
+</div>
+<div class="main main-raised">
+	<div class="profile-content">
+        <div class="container">
+          <div class="col-md-10">
+		<h3>Intro</h3>
+		<p>After my first experiment of using a simple build iPhone app to send info to control an external lamp I wanted to try something with data flowing in the other direction.  So I chose to set up a simple circuit with a temperature sensor, and then send this data to a simple iPhone app to display the temperature. </p>
+	</div>
+	<div class="col-md-10">
+		<h3>Ingridients</h3>
+		<ul class="list-group">
+			<li class="list-group-item">Arduino (Genuino) Uno, Microcontroller</li>
+			<li class="list-group-item">Red Bear Labs BLE Shield 2.1</li>
+			<li class="list-group-item">Breadboard</li>
+			<li class="list-group-item">Temperature Sensor (TMP36)</li>
+			<li class="list-group-item">Power Source (computer via USB or 9V battery)</li>
+			<li class="list-group-item">Jumper Wires</li>
+			<li class="list-group-item">iPhone</li>
+		</ul>
+	</div>	
+	<div class="col-md-10">
+		<h3>Set Up The Circuit</h3>
+        <p>Nothing complicated here. The temp sensor has 3 pins: run one to power, one to ground, and one to an anolog input port on our arduino.  I used my laptop to power the board for this quick hack, but of course a battery to power the board is also an option.</p>
+        
+	</div>
+	<div class="col-md-10">
+		<h3>Program The MicroController</h3>
+		<p>Here is where the learning really started for me on this project.  How would I send the data package?  How would it be received by the phone and will I need to process it at all?  My first thought was 'I want to read the temperate as a float value (like 24.12 C), so I whould capture and pass a float'.  Makes sense and is certainly possible but I quickly realized the float was wanting to send a large data packet for this one simple number ,as the float is stored down to many many decimal places.</p>
+        <p>So I changed my approach for a simpler one.  I would capture the temperature value as a float on the Arduino, then convert it to a string with only 2 decimal places and then send this simple 5 character string via bluetooth to the app. (I hard coded '5 characters assuming a temp range of 10 C and 99C for this quick experiment project). Code below:</p>
+        <pre>
+          <code [innerHTML]="code1"></code>
+        </pre>
+	</div>
+	<div class="col-md-10">
+		<h3>Program The App</h3>
+		<p>AsoOnce again, my life is made easy thanks to the Read Bear Labs<a href="https://github.com/RedBearLab/iOS"> framework</a>.  I initiate a global instance of the framework class (not good coding, but quick and easy for my test here) and fire up the read method on the view load of my main view controller.  I also add a variable property to the BLE class called tempValue and initiated it with a value of 0.  Within the BLE method </p>
+        <pre>
+          <code [innerHTML]="code2"></code>
+        </pre>
+        I capture the updated value received and send a notification to the notification center.
+        <pre>
+          <code [innerHTML]="code3"></code>
+        </pre>
+        In the main view controller I watch for updates for this notification, and when there is one I pull the BLE class property value of tempValue variable, set that value to the label text and update the view.
+        <pre>
+          <code [innerHTML]="code4"></code>
+        </pre>
+	</div>
+	<div class="col-md-10">
+		<h3>Result</h3>
+        <p>Power the circuit and fire up the app and voila - room temperature updated every second.  Or squeeze the thermocouple in my fingers and watch the temperature rise.  :)</p>
+        <img src="../assets/img/hack/BLE_Temp_AppSS.PNG" alt="Screen shot of working app" style="width:350px;height:auto;">
+        
+	</div>
+        </div>
+  </div>
+</div>
+</div>
+
+	
+

@@ -1,0 +1,13 @@
+<div class="tab-pane">
+	<div class="row listItem">
+    <li *ngFor="let job of jobs">
+      <h2><a href="{{job.website}}" title="{{job.name}}" target="_blank">{{job.name}}</a>	<small>{{job.location}}</small></h2>
+			<div *ngFor="let role of job.roles">
+				<h4><b>{{role.title}}</b>	<small>{{role.startdate}} to {{role.enddate}}</small></h4> 
+				<p>{{role.details}}</p>
+			</div>
+    	<hr/>
+    </li>
+	</div>
+</div>
+

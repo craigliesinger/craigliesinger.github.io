@@ -1,0 +1,10 @@
+<div class="tab-pane">
+	<div class="row listItem">
+    <li *ngFor="let school of schools">
+      <h2><a href="{{school.website}}" title="{{school.university}}" target="_blank">{{school.university}}</a> <small>{{school.location}}</small></h2>
+			<h5>{{school.degree}}	<small>{{school.startdate}} to {{school.enddate}}</small></h5> 
+			<div *ngIf=school.gpa>Final gpa: {{school.gpa}} on 4.0 scale</div>
+			<hr/>
+     </li>
+	</div>
+</div>

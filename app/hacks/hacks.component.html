@@ -1,0 +1,11 @@
+<div class="tab-pane">
+	<div class="row listItem">
+    <li *ngFor="let hack of hacks" class="listItem">
+      <h2><a href="/{{hack.short}}" title="{{hack.title}}">{{hack.title}}</a>	</h2>
+			<p>{{hack.overview}}</p>
+			<hr/>
+    </li>
+	</div>
+</div>
+
+

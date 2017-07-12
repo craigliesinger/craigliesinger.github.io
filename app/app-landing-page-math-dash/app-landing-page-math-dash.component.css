@@ -1,0 +1,56 @@
+
+.profile .avatar img {
+    max-width: 160px;
+    margin: -80px auto 0;
+    margin-top: -80px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.name {
+    text-align: center;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profile-content {
+    background: white;
+}
+
+#babybadge {
+  background-color: #00B0FF;
+  color: #E1F5FE;
+}
+.myImages {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    padding: 5px;
+}
+.ssimg {
+    display: inline-block;
+    width:100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 55px;
+    padding-top: 10px;
+    vertical-align: middle;
+    align-content: center;
+}
+.tab-content {
+    display: inline-block;
+}
+
+.carousel-inner {
+    background-color: #ffffff;
+}
+
+.carousel .carousel-indicators li {
+    background: #591E14;
+}

@@ -1,0 +1,71 @@
+<div class="wrapper">
+<div class="header" style="background:#00B0FF"></div>
+<div class="main main-raised">
+	<div class="profile-content">
+        <div class="container">
+            <div class="row">
+                <div class="profile">
+                    <div class="avatar">
+	                    <img src="{{mobileApp.icon}}" class="img-rounded img-responsive img-raised">
+	                  </div>
+	                  <div class="name col-md-6 col-md-offset-3">
+	                    <h3 class="title">{{mobileApp.title}}</h3>
+			                <p>{{mobileApp.detail}}</p>
+                      <a href="{{mobileApp.link}}"><img class="centerImageIfSmall" src="assets/img/App_Store_Badge.svg"></a>
+	                  </div>
+                    <br/>
+	              </div>
+            </div>
+        </div>
+        <div class="row">
+			      <div class="col-md-12">
+				        <div class="profile-tabs">
+		                <div class="nav-align-center">
+				            <div class="tab-content">
+
+<br/>
+    <div class="col-md-8 col-md-offset-2">
+
+						<!-- Carousel Card -->
+						<div class="card card-raised card-carousel">
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								<div class="carousel slide" data-ride="carousel">
+
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+										<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+									</ol>
+
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner">
+										<div class="item" *ngFor="let image of mobileApp.image; let isFirst = first" [class.active]="isFirst">
+											<img src="{{image.ss}}" class="ssimg">
+										</div>
+									</div>
+
+									<!-- Controls -->
+									<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+										<i class="material-icons">keyboard_arrow_left</i>
+									</a>
+									<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+										<i class="material-icons">keyboard_arrow_right</i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<!-- End Carousel Card -->
+<br/>
+<br/>
+					</div>
+
+				            </div>
+					      </div>
+				    </div>
+			  </div>
+      </div>
+  </div>
+</div>
+</div>

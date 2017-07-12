@@ -1,0 +1,9 @@
+<div class="tab-pane">
+	<div class="row listItem">
+    <li *ngFor="let mobileApp of mobileApps">
+      <h2><a routerLink="/{{mobileApp.short}}" title="{{mobileApp.title}}">{{mobileApp.title}}</a>	<small>{{mobileApp.time}}	</small></h2>
+			<p>{{mobileApp.overview}}</p>
+			<hr/>
+    </li>
+	</div>
+</div>

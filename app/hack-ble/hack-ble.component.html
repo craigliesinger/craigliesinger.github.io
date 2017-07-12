@@ -1,0 +1,90 @@
+<div class="wrapper">
+<div class="header header-filter" style="background-image: url('/assets/img/hack/DIY_bled.jpeg');">
+    <div class="container">
+			<br/>
+			<br/>
+      <br/>
+			<div class="col-md-5">	
+			</div>
+			<div class="col-md-7" style="background: rgba(50, 50, 50, 0.4);">
+				<h1 class="centerTextIfSmall" style="color: white;">Color Mixing Lamp Controlled by iPhone</h1>
+			</div>
+		</div>
+</div>
+<div class="main main-raised">
+	<div class="profile-content">
+        <div class="container">
+          <div class="col-md-10">
+		<h3>Intro</h3>
+		<p>I love the thought of manipulating the outside world with code.  This project uses Arduino, Red Bear BLE Shield and iPhone (Swift) to control the color and brightness of a light.</p>
+	</div>
+	<div class="col-md-10">
+		<h3>Ingridients</h3>
+		<ul class="list-group">
+			<li class="list-group-item">Arduino (Genuino) Uno, Microcontroller</li>
+			<li class="list-group-item">Red Bear Labs BLE Shield 2.1</li>
+			<li class="list-group-item">Breadboard</li>
+			<li class="list-group-item">RGB LED</li>
+			<li class="list-group-item">3 x 220 Ohm Resistors</li>
+			<li class="list-group-item">Power Source (computer via USB or 9V battery)</li>
+			<li class="list-group-item">Jumper Wires</li>
+		</ul>
+	</div>	
+	<div class="col-md-10">
+		<h3>Set Up The Circuit</h3>
+        <p>The cuircuit is a straight forward connection to a LED.  Not very different from a typical 'Hello World' in electronics, just using a single RGB color mixing LED and not a single color LED.  As seen in the diagram below, the Red, Green and Blue pins are connected to PWM output pins on the controller and the common ground runs to the ground on the controller.  The controller is then supplied power via a 9V battery (or the USB port can provide power to the controller).</p>
+        <figure>
+            <img src="../img/hack/bled_circuit.png" alt="Wiring diagram" style="width:400px;height:auto;">
+            <figcaption>The diagram of the simple circuit.</figcaption>
+        </figure>
+	</div>
+	<div class="col-md-10">
+		<h3>Program The MicroController</h3>
+		<p>The circuit is set and now we need to teach the controller how / when it should power our various color pins. First, we include the necessary libraries for the BLE shield.  Then we define which pin is connected to which color of our RGB LED.</p>
+		<pre>
+      <code [innerHTML]="code1"></code>
+    </pre>
+		<br/>
+		<p>Next step is to do the setup, telling the controller of our output pins, giving them initial values and firing up the bluetooth.</p>
+		<pre>
+      <code [innerHTML]="code2"></code>
+    </pre>
+		<br/>
+		<p>Now that we have the set up it is time to define the Loop, what the controller will be running on repeat as long as it is powered.  We set up some debugging to make sure our Bluetooth is connected, and if so we read in the passed values and if the value matches one of our LED pins we will assign the next given value as that pins value.</p>
+	  <pre>
+      <code [innerHTML]="code3"></code>
+    </pre>
+	</div>
+	<div class="col-md-10">
+		<h3>Program The App</h3>
+		<p>Time to fire up Xcode and throw together a quick app to control our light.  The easiest way is to simply download the Read Bear app on the iTunes store and presto it works.  However, I don't learn anything this way so I want to build my own (plus I only need a front end that controls 3 pins, not every pin).  This task isn't too daunting thanks to the lovely open source <a href="https://github.com/RedBearLab/iOS"> framework</a> provided by Read Bear.  Thus the task at hand is making a simple view to connect to the device and a view to set the values I want and use the provided framework to send them to the Bluetooth shield.  I decided to put the main controlling screen first and have a ‘connect’ button that will take us to a table view that will list all BLE devices advertising themselves for connection.</p>
+		<img src="../assets/img/hack/bled_storyboard.png" alt="Xcode Storyboard" style="width:100%;height:auto;">
+		<br/>
+		<p>Our viewcontroller swift file for the main view...</p>
+		<pre>
+      <code [innerHTML]="code4"></code>
+    </pre>
+		<p><i>*Don't forget to make the right connections between elements in the storyboard to the code.</i></p>
+		<br/>
+		<p>Then the simple tableViewController to show all devices advertising bluetooth services and giving us a mechanism to connect to a device.</p>
+		<pre>
+      <code [innerHTML]="code5"></code>
+    </pre>
+		<br/>
+		<p>That is it.  Build the app and deploy to device (make sure bluetooth is on for the phone).</p>
+	</div>
+	<div class="col-md-10">
+		<h3>Result</h3>
+		<p>To soften the light I did some advanced hardward packaging (I put a tupperware container over top of it).  The opaque casing helps soften and distribute the light.  The light off to the side is the 'on' light for the BLE shield.  Sorry for the poor videography, I'm not too good at recording with one hand and using an App with the other :).</p>
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe width="420" height="315" src="https://www.youtube.com/embed/P3PNRWPDajM" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<br/>
+		<img src="../assets/img/hack/bled_final.jpeg" alt="The result" style="width:50%;height:auto;">
+		<br/>
+	</div>
+        </div>
+  </div>
+</div>
+
+	

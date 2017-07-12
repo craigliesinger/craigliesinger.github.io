@@ -1,0 +1,21 @@
+
+.profile .avatar img {
+    max-width: 160px;
+    margin: -80px auto 0;
+    margin-top: -80px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+.name {
+    text-align: center;
+}
+
+.tab-content {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.profile-content {
+    background: white;
+}

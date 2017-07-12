@@ -1,0 +1,60 @@
+<div class="wrapper">
+<div class="header header-filter" style="background-image: url('../assets/img/anchor.jpg');"></div>
+<div class="main main-raised">
+	<div class="profile-content">
+        <div class="container">
+            <div class="row">
+                <div class="profile">
+                    <div class="avatar">
+	                    <img src="../assets/img/craig.png" class="img-rounded img-responsive img-raised">
+	                </div>
+	                <div class="name">
+	                    <h3 class="title">Craig Liesinger</h3>
+			            <h6>Project Manager by day. Husband and father by evening. Coding hobbiest by night</h6>
+	                </div>
+	            </div>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="profile-tabs">
+		            <div class="nav-align-center">
+						<ul class="nav nav-pills">
+							<li routerLinkActive="active">
+								<a routerLink="apps">
+									<i class="material-icons">developer_mode</i>
+									Mobile Apps
+								</a>
+							</li>
+							<li routerLinkActive="active">
+								<a routerLink="hacks">
+									<i class="material-icons">developer_board</i>
+									Arduino Hacks
+		                        </a>
+		                    </li>
+        		            <li routerLinkActive="active">
+				                <a routerLink="education">
+									<i class="material-icons">school</i>
+									Education
+	                            </a>
+		                    </li>
+                            <li routerLinkActive="active">
+		                        <a routerLink="work">
+									<i class="material-icons">work</i>
+									Work History
+		                        </a>
+	                        </li>
+				        </ul>
+
+				        <div class="tab-content gallery">
+							<router-outlet></router-outlet>
+				            
+				        </div>
+					</div>
+				</div>
+				<!-- End Profile Tabs -->
+			</div>
+        </div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,24 @@
+#navbar-full .navbar{
+    border-radius: 0 !important;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+.navbar-small .logo-container .brand{
+    color: #333333;
+}
+.navbar-default.navbar-small .logo-container .brand{
+    color: #333333;
+}
+.navbar-transparent.navbar-small .logo-container .brand{
+    color: #FFFFFF;
+}
+.navbar-default.navbar-small .logo-container .brand{
+    color: #333333;
+}
+.section-navbars{
+    padding-top: 0;
+}
+#navbar .navbar{
+    border-radius: 0;
+}
+
