@@ -1,3 +1,5 @@
+This git has all Dev code for simple static personal website built on Angular 4 (so I could learn it).  Find working version at craigliesinger.com 
+
 # CLGit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
